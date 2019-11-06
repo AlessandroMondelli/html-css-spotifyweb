@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: linear-gradient(to bottom right, lightblue, black);
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 90vh;
+}
+
+/*** MENU IN ALTO ***/
+
+#menu {
+    padding-top: 20px;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 50px;
+}
+
+/*** FINE MENU IN ALTO ***/
+
+#mid-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#spoty-music {
+    height: 200px;
+    background-color: red;
+    overflow: hidden;
+}
+
+#side-menu {
+    background-color: rgba(0,0,0,0.7);
+    width: 300px;
+    order: -1;
+}
+
+#player {
+    height: 10vh;
+    background-color: #282828;
+}
