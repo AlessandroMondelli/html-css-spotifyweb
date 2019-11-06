@@ -14,6 +14,10 @@ main {
     height: 90vh;
 }
 
+.hidden-xs {
+    display: none;
+}
+
 #mid-cont {
     display: flex;
     flex-direction: column;
@@ -56,12 +60,13 @@ main {
 
 #side-menu {
     background-color: rgba(0,0,0,0.7);
-    width: 300px;
+    width: 20vw;
     order: -1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-weight: bold;
+    text-align: center;
 }
 
 #side-menu ul {
@@ -157,13 +162,11 @@ main {
 }
 
 #bottom-side img {
-    width: 10%;
+    width: 50%;
     border-radius: 50%;
-    display: inline-block;
 }
 
 #bottom-side p {
-    display: inline-block;
     color: white;
     vertical-align: super;
 }
@@ -181,3 +184,47 @@ main {
 /*** FINE PLAYER ***/
 
 /*** MEDIA QUERY ***/
+
+@media screen and (min-width: 0px) {
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .visible-sm {
+        display: inline-block;
+    }
+
+    .visible-sm-block {
+        display: block;
+    }
+
+    #side-menu {
+        width: 30vw;
+        text-align: left;
+    }
+
+    #bottom-side i {
+        margin-right: 15px;
+    }
+    #bottom-side img {
+        width: 30%;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #side-menu {
+        width: 15vw;
+    }
+
+    #bottom-side i {
+        margin-right: 15px;
+    }
+    #bottom-side img {
+        width: 10%;
+        margin-right: 5px;
+    }
+}
