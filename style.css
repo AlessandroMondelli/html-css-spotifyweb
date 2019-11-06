@@ -26,10 +26,6 @@ main {
 
 /*** MENU IN ALTO ***/
 
-#menu {
-    /* padding-top: 20px; */
-}
-
 #menu ul li {
     display: inline-block;
 }
@@ -64,18 +60,20 @@ main {
     order: -1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 #side-menu ul {
     list-style-type: none;
 }
 
-#side-menu a {
+#side-menu a,h2 {
     color: rgb(179, 179, 179);
     text-decoration: none;
 }
 
-#side-menu ul li a:hover {
+#side-menu ul li a:hover,#bottom-side a:hover {
     color: white;
 }
 
@@ -128,14 +126,16 @@ main {
     font-size: 20px;
 }
 
-#side-menu #playlists {
+#side-menu #playlists,#bottom-side {
     width: 85%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 #side-menu #playlists h2 {
-    font-size: 14px;
+    font-size: 11px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 #side-menu #playlists li a i {
@@ -146,6 +146,28 @@ main {
     margin-right: 15px;
     margin-top: 10px;
 }
+
+#side-menu #playlists li a {
+    line-height: 2.8;
+    font-size: 14px;
+}
+
+#bottom-side hr {
+    margin: 10px 0;
+}
+
+#bottom-side img {
+    width: 10%;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#bottom-side p {
+    display: inline-block;
+    color: white;
+    vertical-align: super;
+}
+
 
 /*** FINE SIDEBAR ***/
 
