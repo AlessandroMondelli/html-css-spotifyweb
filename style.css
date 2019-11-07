@@ -37,11 +37,35 @@ main {
 #menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: rgba(255, 255, 255, 0.6);
     font-weight: bold;
     font-size: 12px;
     margin-right: 50px;
     line-height: 60px;
+}
+
+#menu a:hover {
+    color: white;
+}
+
+#menu li:first-child a {
+    color: white;
+    position: relative;
+}
+
+#menu li:first-child a::before {
+    content: "";
+    border-bottom: 2.5px solid #1ed760;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    bottom: -5px;
+}
+
+#hamburger {
+    align-self: flex-start;
+    margin: 15px 15px;
+    font-size: 30px;
 }
 
 /*** FINE MENU IN ALTO ***/
@@ -51,7 +75,6 @@ main {
 #spoty-music {
     height: 200px;
     background-color: red;
-    overflow: hidden;
 }
 
 /*** FINE SEZIONE SPOTY MUSIC ***/
@@ -67,6 +90,10 @@ main {
     justify-content: space-between;
     font-weight: bold;
     text-align: center;
+}
+
+#side-menu i {
+    font-size: 30px;
 }
 
 #side-menu ul {
@@ -184,15 +211,11 @@ main {
 /*** FINE PLAYER ***/
 
 /*** MEDIA QUERY ***/
-
-@media screen and (min-width: 0px) {
-
-
-
-
-}
-
 @media screen and (min-width: 768px) {
+    .hidden-sm {
+        display: none;
+    }
+
     .visible-sm {
         display: inline-block;
     }
@@ -206,12 +229,30 @@ main {
         text-align: left;
     }
 
+    #side-menu i {
+        font-size: 16px;
+    }
+
+    #side-menu #playlists li a {
+        font-size: 14px;
+    }
+
     #bottom-side i {
         margin-right: 15px;
     }
     #bottom-side img {
         width: 30%;
         margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hidden-md {
+        display: none;
+    }
+
+    .visible-md {
+        display: inline-block;
     }
 }
 
