@@ -73,8 +73,77 @@ main {
 /*** SEZIONE CENTRALE: SPOTY-MUSIC ***/
 
 #spoty-music {
-    height: 200px;
-    background-color: red;
+    padding-top: 50px;
+    align-self: flex-start;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);;
+}
+
+.music-sez {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#music-order {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#spoty-music .music-sez h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.music-info {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+}
+
+.music-info.artist img {
+    border-radius: 50%;
+}
+
+.music-info:not(:first-child) {
+    text-align: center;
+}
+
+.music-info img {
+    width: 90%;
+}
+
+.music-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.music-info p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.music-info a:nth-child(3) {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.music-info a:nth-child(3):hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /*** FINE SEZIONE SPOTY MUSIC ***/
@@ -100,7 +169,7 @@ main {
     list-style-type: none;
 }
 
-#side-menu a,h2 {
+#side-menu a,#side-menu h2 {
     color: rgb(179, 179, 179);
     text-decoration: none;
 }
@@ -244,6 +313,11 @@ main {
         width: 30%;
         margin-right: 5px;
     }
+
+    .music-info {
+        flex-basis: 25%;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -254,7 +328,23 @@ main {
     .visible-md {
         display: inline-block;
     }
-}
+
+    .music-sez {
+        margin-bottom: 35px;
+    }
+
+    #spoty-music .music-sez h2 {
+        font-size: 36px;
+    }
+
+    .music-info {
+        flex-basis: 15%;
+        margin-bottom: 15px;
+    }
+
+    .music-info img {
+        width: 90%;
+    }
 
 @media screen and (min-width: 1200px) {
     #side-menu {
