@@ -321,7 +321,6 @@ main {
     height: 10vh;
     background-color: #282828;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     align-content: center;
     color: #B3B3B3;
@@ -372,7 +371,7 @@ main {
 }
 
 #player .fa-heart {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #player .content #title a h4 {
@@ -465,10 +464,6 @@ main {
     }
 
     #side-menu {
-        width: 20vw;
-    }
-
-    #side-menu {
         width: 30vw;
         text-align: left;
     }
@@ -479,6 +474,10 @@ main {
 
     #side-menu #playlists li a {
         font-size: 14px;
+    }
+
+    #player {
+        justify-content: space-between;
     }
 
     #player .fa-heart {
@@ -537,6 +536,7 @@ main {
     #minutes::after {
         right: -5%;
     }
+}
 
 @media screen and (min-width: 1200px) {
     #side-menu {
